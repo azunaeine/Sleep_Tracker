@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.title {
+  color: #000;
+  font-family: Noto Serif;
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+body {
+  background-color: #ffeed9;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.moon {
+  display: block;
+  width: 16em;
+  position: absolute;
+  z-index: 1; /* Lower z-index for moon */
+}
+
+.pillow {
+  display: block;
+  width: 16em;
+  position: relative;
+  z-index: 2; /* Higher z-index for pillow */
+}
+
+.mainbutton {
+  border-radius: 5px;
+  background: #f1a30c;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  width: 13em;
+  padding: 2px;
+  text-decoration: none;
+  color: white;
+  height: 3em;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2.8em;
+  }
+  .moon {
+    width: 23em;
+  }
+  .pillow {
+    width: 24em;
+  }
+
+  main {
+    gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .moon {
+    width: 26em;
+  }
+  .pillow {
+    width: 26em;
+  }
+
+  .title {
+    font-size: 3.8em;
+  }
+  .mainbutton {
+    cursor: pointer;
+    margin-top: 40em;
+    width: 16em;
+    transition: all 0.3s ease-out;
+    margin-top: 2em;
+  }
+
+  .mainbutton:hover {
+    transform: scale(1.1);
+  }
+
+  main {
+    overflow-y: hidden;
+  }
+
+  .image-container {
+    position: relative;
+    bottom: 2em;
+  }
+}

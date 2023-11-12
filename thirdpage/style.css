@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #ffeed9;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #f1a30c;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-right: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15.9em;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  display: inline-block;
+  font-size: 19px !important;
+  color: #ffffff;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the .nobutton class */
+.nobutton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: moveUp 1s ease; /* Adjust the duration and easing as needed */
+}
+
+.title {
+  color: #000;
+  font-family: Noto Serif;
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 2rem;
+}
+
+.moon {
+  margin-right: 34px;
+  display: block;
+  width: 24em;
+  position: absolute;
+  z-index: -1;
+  margin-top: -7em;
+}
+
+.volumeb {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  position: relative;
+  top: 10px;
+}
+
+.sleepduration {
+  color: #000;
+  font-family: Noto Serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-right: 5.5em;
+}
+
+#dropdown {
+  height: 48px;
+  width: 298px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #e5ecf1;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+#dropdown option {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.radiobox {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Add this CSS to your stylesheet */
+label {
+  color: #000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.mainbutton {
+  border-radius: 5px;
+  background: #f1a30c;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  width: 13em;
+  padding: 2px;
+  text-decoration: none;
+  color: white;
+  height: 3em;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 25px auto;
+  border: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .mainbutton {
+    cursor: pointer;
+    width: 16em;
+    transition: all 0.3s ease-out;
+    margin-top: 1em;
+  }
+
+  .mainbutton:hover {
+    transform: scale(1.1);
+  }
+  .arrow {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  .arrow:hover {
+    transform: scale(1.1);
+  }
+}

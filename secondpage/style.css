@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.title {
+  color: #000;
+  font-family: Noto Serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 2rem;
+}
+
+body {
+  background-color: #ffeed9;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.adtext {
+  color: #000;
+  font-family: Noto Serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.displayad {
+  font-size: 24px;
+  color: #000;
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.displaybox {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 309px;
+  height: 8em;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #e5ecf1;
+}
+
+.iconad {
+  width: 4em;
+}
+
+.moon {
+  display: block;
+  width: 20em;
+  position: absolute;
+  z-index: -1; /* Lower z-index for moon */
+}
+
+.tweak {
+  position: relative;
+  left: 2px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-right: 3rem;
+  color: #000;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.box {
+  width: 309px;
+  min-height: 100px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #e5ecf1;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8em;
+  opacity: 0; /* Initially set opacity to 0 */
+  transform: translateY(20px); /* Initially move the boxes down by 20px */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* Add transition for smooth movement */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Add a class to animate the boxes when they become visible */
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mini-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.desc {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.arrow {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #f1a30c;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-right: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15.9em;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  display: inline-block;
+  font-size: 19px !important;
+  color: #ffffff;
+}
+
+.gap {
+  display: flex;
+  gap: 9em;
+}
+
+.plusbox {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #f1a30c;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-right: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15em;
+  margin-top: 1rem;
+  margin: 0 auto;
+  position: relative;
+  bottom: 12px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .arrow {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  .arrow:hover {
+    transform: scale(1.1);
+  }
+
+  .plusbox {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  .plusbox:hover {
+    transform: scale(1.1);
+  }
+}
+.buttons{
+  width: 100%;
+  text-align: right;
+  padding-right: 14px;
+}
+.buttons button{
+  border: none;
+  color: white;
+  border-radius: 3px;
+  font-size: 10px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+.update{
+  background-color: #39A7FF ;
+}
+.delete{
+  background-color: #E91825;
+}
+.main-subtitle{
+   display: flex;
+   align-items: center;
+}
+.refresh{
+   background-color: black;
+   padding: 5px;
+   cursor: pointer;
+   border-radius: 5px;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}

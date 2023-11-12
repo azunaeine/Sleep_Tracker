@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Sleep Tracker Form</title>
+  </head>
+  <body>
+    <main>
+      <a href="../index.html" class="arrow">
+        <span class="material-symbols-outlined"> arrow_back_ios </span>
+      </a>
+      <h2 class="title">Sleep Tracker</h2>
+      <img src="../images/moon.png" class="moon" />
+      <form class="volumeb">
+        <div class="nobutton">
+          <h5 class="sleepduration">Sleep Duration:</h5>
+          <select name="sleeptime" id="dropdown">
+            <option value="0hrs">0 Hours</option>
+            <option value="1hr">1 Hour</option>
+            <option value="2hrs">2 Hours</option>
+            <option value="3hrs">3 Hours</option>
+            <option value="4hrs">4 Hours</option>
+            <option value="5hrs">5 Hours</option>
+            <option value="6hrs">6 Hours</option>
+            <option value="7hrs">7 Hours</option>
+            <option value="8hrs">8 Hours</option>
+            <option value="9hrs">9 Hours</option>
+            <option value="10hrs">10 Hours</option>
+            <option value="11hrs">11 Hours</option>
+            <option value="12hrs">12 Hours</option>
+          </select>
+          <h5 class="sleepduration">Sleep Ratings:</h5>
+          <div class="radiobox">      
+            <div class="horizantal">
+              <input
+                type="radio"
+                id="1star"
+                value="1 star"
+                class="radiobutton"
+                name="star"
+              />
+              <label for="1star">1 star</label>
+            </div>
+            <div class="horizantal">
+              <input
+                type="radio"
+                id="2stars"
+                value="2 stars"
+                class="radiobutton"
+                name="star"
+              />
+              <label for="2stars">2 stars</label>
+            </div>
+            <div class="horizantal">
+              <input
+                type="radio"
+                id="3stars"
+                value="3 stars"
+                class="radiobutton"
+                name="star"
+              />
+              <label for="3stars">3 stars</label>
+            </div>
+            <div class="horizantal">
+              <input
+                type="radio"
+                id="4stars"
+                value="4 stars"
+                class="radiobutton"
+                name="star"
+              />
+              <label for="4stars">4 stars</label>
+            </div>
+            <div class="horizantal">
+              <input
+                type="radio"
+                id="5stars"
+                value="5 stars"
+                class="radiobutton"
+                name="star"
+              />
+              <label for="5stars">5 stars</label>
+            </div>
+          </div>
+          <button class="mainbutton"> Post </button>
+        </form>
+    </main>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
